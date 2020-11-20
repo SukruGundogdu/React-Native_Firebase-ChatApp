@@ -7,7 +7,6 @@ const PostInput = (props) => {
 
   return (
     <View style={post_input.container}>
-
       <View style={post_input.inputContainer}>
         <TextInput
           multiline

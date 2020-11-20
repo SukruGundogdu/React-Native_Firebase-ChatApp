@@ -53,6 +53,7 @@ const Timeline = () => {
           onLogOut={() => auth().signOut()}
         />
 
+        <FlatList data={[]} renderItem={() => null} />
         <FlatList
           keyExtractor={(_, i) => i.toString()}
           data={postList}
