@@ -22,6 +22,7 @@ const Sign = (props) => {
             />
             <Text style={authStyle.logoText}>ClarusChat</Text>
           </View>
+          
           <View style={{flex: 1}}>
             <Input
               inputProps={{
