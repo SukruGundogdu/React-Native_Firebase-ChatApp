@@ -6,7 +6,7 @@ import {PostItem, PostInput, Header, TopicSelectModal} from '../components';
 
 const Timeline = () => {
   const [selectedTopic, setSelectedTopic] = useState(null);
-  const [topicModalFlag, setTopicModalFlag] = useState(false);
+  const [topicModalFlag, setTopicModalFlag] = useState(true);
 
   return (
     <SafeAreaView style={timelinePage.container}>
@@ -23,7 +23,7 @@ const Timeline = () => {
 
         <TopicSelectModal
           visibility={topicModalFlag}
-          onClose={() => setTopicModalFlag(false)}
+          onClose={() => selectedTopic ? setTopicModalFlag(false) : null}
           onTopicSelect={(value) => {
             setSelectedTopic(value);
             setTopicModalFlag(false);
